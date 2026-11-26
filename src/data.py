@@ -1,7 +1,9 @@
 """Data loading. The notebook, training, and tests all read CSVs through here."""
 
 from pathlib import Path
+
 import pandas as pd
+
 from src import config
 
 

@@ -9,3 +9,8 @@ DATA_DIR = ROOT_DIR / "data"
 # The train CSV has 4 truncated UTF-8 sequences; "replace" turns them into U+FFFD.
 CSV_ENCODING = "utf-8"
 CSV_ENCODING_ERRORS = "replace"
+SEED = 6
+
+# Training cleaner replaces URLs with this token 
+# Letters only, so lowercasing and TF-IDF's default tokenizer leave it intact.
+URL_TOKEN = "urltoken"

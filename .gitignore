@@ -4,3 +4,8 @@ docs/
 CLAUDE.md
 __pycache__/
 *.pyc
+models/
+metrics.json
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
