@@ -14,3 +14,16 @@ SEED = 6
 # Training cleaner replaces URLs with this token 
 # Letters only, so lowercasing and TF-IDF's default tokenizer leave it intact.
 URL_TOKEN = "urltoken"
+
+# Columns used by the model; everything else is dropped in src/data.py.
+TEXT_COL = "OriginalTweet"
+LABEL_COL = "Sentiment"
+
+# Allowed labels, ordered from most negative to most positive.
+LABELS = (
+    "Extremely Negative",
+    "Negative",
+    "Neutral",
+    "Positive",
+    "Extremely Positive",
+)
