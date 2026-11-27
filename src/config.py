@@ -27,3 +27,11 @@ LABELS = (
     "Positive",
     "Extremely Positive",
 )
+
+# Full dataset (local only; gitignored, so CI never has it).
+TRAIN_CSV = DATA_DIR / "Corona_NLP_train.csv"
+TEST_CSV = DATA_DIR / "Corona_NLP_test.csv"
+
+# Small stratified sample of the prepared train set; the only data CI sees.
+FIXTURE_PATH = ROOT_DIR / "tests" / "fixtures" / "sample.csv"
+FIXTURE_SIZE = 1000
